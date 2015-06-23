@@ -1,0 +1,201 @@
+$kude-red: #e9473f;
+
+.top-bar {
+  margin-top: 1rem;
+  background-color: transparent;
+  height: 55px;
+  line-height: 55px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  img {
+    height: 55px;
+  }
+  .blog-link {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: $kude-red;
+    color: #fff;
+    margin-top: .25rem;
+    display: block;
+  }
+}
+
+#who-1 {
+  background-color: #fff;
+  .top {
+    height: 75%;
+    background-image: url("/images/theme/who-1-bg.jpg");
+    background-size: cover;
+    div {
+      display: table;
+      height: 100%;
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        span {
+          background-color: rgba(255, 255, 255, 0.8);
+          display: block;
+          padding: 4rem 3rem;
+          font-size: 1.4rem;
+          &::before {
+            color: $kude-red;
+            content: "\“";
+            position: absolute;
+            margin-left: -20px;
+          }
+          &::after{
+            content: "\”";
+            color: $kude-red;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 25%;
+    div {
+      display: table;
+      height: 100%;
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+#who-2 {
+  background-color: #fff;
+  .top {
+    height: 75%;
+    background-image: url("/images/theme/who-2-bg.jpg");
+    background-size: cover;
+    position: relative;
+    div {
+      position: absolute;
+      top: 90px;
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        span {
+          background-color: rgba(0, 0, 0, 0.8);
+          display: block;
+          padding: 3rem 2rem;
+          font-size: 1.4rem;
+          color: #fff;
+          &::before {
+            color: $kude-red;
+            content: "\“";
+            position: absolute;
+            margin-left: -20px;
+          }
+          &::after{
+            content: "\”";
+            color: $kude-red;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 25%;
+    div {
+      display: table;
+      height: 100%;
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+#who-3 {
+  .wrap {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+    .placeholder {
+      height: 15%;
+    }
+    .bg {
+      height: 70%;
+      background-image: url("/images/theme/who-3-bg.jpg");
+      background-size: cover;
+    }
+    p {
+      position: absolute;
+      margin: 0 auto;
+      top: 10%;
+      left: 0;
+      right: 0;
+      span {
+        background-color: rgba(0, 0, 0, 0.8);
+        display: block;
+        padding: 3rem 4rem;
+        font-size: 1.4rem;
+        color: #fff;
+        &::before {
+          color: $kude-red;
+          content: "\“";
+          position: absolute;
+          margin-left: -20px;
+        }
+        &::after{
+          content: "\”";
+          color: $kude-red;
+        }
+      }
+    }
+  }
+}
+
+#office {
+  .top {
+    height: 70%;
+    ul {
+      padding: 6rem 4rem 0 4rem;
+    }
+    div {
+      display: table;
+      height: 100%;
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        span {
+          background-color: rgba(255, 255, 255, 0.8);
+          display: block;
+          padding: 4rem 3rem;
+          font-size: 1.4rem;
+          &::before {
+            color: $kude-red;
+            content: "\“";
+            position: absolute;
+            margin-left: -20px;
+          }
+          &::after{
+            content: "\”";
+            color: $kude-red;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 30%;
+    display: table;
+    div {
+      display: table-cell;
+      vertical-align: middle;
+      h3 {
+        text-align: center;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

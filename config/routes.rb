@@ -53,6 +53,7 @@ Rails.application.routes.draw do
   get 'check_password', to: 'articles#check_password', format: false
   get 'articles/markup_help/:id', to: 'articles#markup_help', format: false
   get 'articles/tag', to: 'articles#tag', format: false
+  get 'articles', to: 'articles#index', format: false
 
   # SetupController
   match '/setup', to: 'setup#index', via: [:get, :post], format: false
@@ -181,7 +182,9 @@ Rails.application.routes.draw do
     resources :users, only: [:index, :new, :edit, :create, :update, :destroy], format: false
   end
 
-  root 'articles#index'
+  # root 'articles#index'
+  
+  root 'home#index'
 
   get '*from', to: 'articles#redirect', format: false
 end
