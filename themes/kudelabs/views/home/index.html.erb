@@ -16,19 +16,19 @@
   <section id="who-1">
 
     <div class="top">
-      <div class="large-3 large-centered columns">
+      <div class="large-4 large-centered columns">
         <p>
-          <span>
-            We Focused On Building High Quality Web Applications
+          <span class="text-center">
+            Delivering Quality Software
           </span>
         </p>
       </div>
     </div>
 
     <div class="bottom row">
-      <div class="large-8 large-centered columns">
+      <div class="large-9 large-centered columns">
         <p class="text-justify">
-          Our focus is the development, testing, and management of web based software. We work with an international group of designers, consultants, and corporations on projects ranging from energy distribution to virtual presence robots. 
+          Kudelabs is a bespoke software agency delivering well crafted software to clients around the world. We work with an international team of software architects, engineers, and designers to provide robust solutions to complex problems. From future energy distribution to remote control cameras our projects span a variety of industries and are deployed at different scales. The thread running through this diverse portfolio is an emphasis on good design, sound engineering, and quality craftsmanship. 
         </p>
       </div>
     </div>
@@ -41,7 +41,7 @@
       <div class="large-3 columns">
         <p>
           <span>
-            Our philosophy is to allow developers the freedom to get the job done while continuing to learn about new technologies and techniques.
+            Ruby on Rails in Guangzhou, China
           </span>
         </p>
       </div>
@@ -50,7 +50,7 @@
     <div class="bottom row">
       <div class="large-8 large-centered columns">
         <p class="text-justify">
-          We use Linux and MacOS, as well as Windows and enjoy the best equipment we can get our hands on. We live in the world of open source, both using and contributing to projects like Rails and Prototype JS.
+          We started in 2008 as a Ruby on Rails shop, and continue to use this framework as one of our main tools. 
         </p>
       </div>
     </div>
@@ -100,21 +100,114 @@
   </section>
 
   <section id="employee">
-
   </section>
 
   <section id="contact">
+    <div class="top">
+      <div class="wrap large-8 large-centered columns">
+        <div class="align-middle text-center">
+          <h3>JOIN US!</h3>
+          <p class="text-justify">
+            If you are a web developer located in the Guangzhou area, or willing to relocate to the Guangzhou area, we would love to talk to you. You should have significant experience building web-based applications. We are looking for experts in front-end development, ruby hackers, and deployment specialists.
+          </p>
+          <div class="apply large-10 large-centered columns">TO APPLY SEND YOUR <span>ENGLISH</span> COVER LETTER &amp; RESUME TO US</div>
+          <div class="mailto"><a href="mailto:connect@kudelabs.com">connect@kudelabs.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="large-6 columns">
+        <ul class="contact">
+          <li>
+            Going to
+            <h5>VISIT OUR OFFICE</h5>
+          </li>
+          <li>
+            Looking for
+            <h5>COOPERATION</h5>
+          </li>
+          <li>
+            Intent to
+            <h5>JOIN US</h5>
+          </li>
+          <li>
+            <h5>CONTACT US</h5>
+            <a href="mailto:connect@kudelabs.com">connect@kudelabs.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="large-3 columns">
+        <ul>
+          <li><h5>COMMUNITY</h5></li>
+          <li><a href="http://www.gzruby.org/">GZRuby</a></li>
+          <li><a href="http://gems.gzruby.org/">GZRuby Rubygems</a></li>
+          <li><a href="http://www.kudelabs.com/category/rails-on-campus">Rails on Campus</a></li>
+          <li><a href="http://railsgirls.com/guangzhou">Rails Girls GZ</a></li>
+          <li><a href="http://startupgrind.com/guangzhou">StartupGrind GZ</a></li>
+          <li><a href="http://guangzhou.startupweekend.com/">Startup Weekend GZ</a></li>
+        </ul>
+      </div>
+      <div class="large-3 columns">
+        <ul>
+          <li><h5>PUBLIC PROJECTS</h5></li>
+          <li><a href="http://github.com/kudelabs">Kudelabs @ Github</a></li>
+          <li><a href="http://rango360.com/">Rango - 360º</a></li>
+          <li><a href="http://pleasesign.in/">PleaseSign.in</a></li>
+          <li><a href="http://schedule.ph/">Schedule.ph</a></li>
+          <li><a href="http://prdguide.com/">PRDGuide.com</a></li>
+          <li><a href="http://gztechjobs.com/">GZTechJobs.com</a></li>
+        </ul>
+      </div>
+      <div class="large-12 columns footer">
+        <div class="hr"></div>
+        Kudelabs &copy; 2008 - <%= Time.now.year %>
+      </div>
+    </div>
 
   </section>
 
 </div>
 <script>
   $(document).ready(function(){
-    $(".main").onepage_scroll({
-      sectionContainer: "section",
+    $('.main').onepage_scroll({
+      sectionContainer: 'section',
       responsiveFallback: 600,
       loop: true
     });
+    loadMembers();
   });
-  
+  function loadMembers(){
+    var members = [
+      "anny",
+      "billy",
+      "cantin",
+      "chad",
+      "doni",
+      "little",
+      "shaokun",
+      "xurry",
+      "zernel",
+      "zhong"
+    ];
+    members = shuffleArray(members);
+    var Objul = $('<ul/>')
+        .addClass('large-block-grid-5');
+    $.each(members, function(i, member){
+      var img = $('<img/>')
+          .attr('src', '/images/theme/' + member + '.png');
+      var li = $('<li/>')
+          .append(img)
+          .appendTo(Objul);
+    });
+    $('#employee').append(Objul);
+  }
+  function shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+      }
+      return array;
+  }
 </script>
