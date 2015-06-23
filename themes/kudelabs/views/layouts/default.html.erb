@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head profile="http://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= h(page_title) %></title>
+    <%= render 'shared/page_header' %>
+
+    <%= favicon_link_tag 'favicon.png' %>
+    <%= favicon_link_tag 'favicon.png', rel: "apple-touch-icon", type: 'image/png' %>
+    <%= favicon_link_tag 'favicon.png', rel: "apple-touch-icon-precomposed", type: 'image/png' %>
+
+  </head>
+
+  <body class="<%= controller_name %>">
+    <%= yield %>
+  </body>
+
+</html>

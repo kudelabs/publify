@@ -1,0 +1,120 @@
+<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+  <ul class="left">
+    <li>
+      <%= link_to(image_tag('/images/theme/kudelabs-logo.png'), this_blog.base_url, class: '')%>
+    </li>
+  </ul>
+  <ul class="right">
+    <li>
+      <%= link_to('Our Blog', {controller: 'articles', action: 'index'}, class: 'blog-link') %>
+    </li>
+  </ul>
+</nav>
+
+<div class="main">
+
+  <section id="who-1">
+
+    <div class="top">
+      <div class="large-3 large-centered columns">
+        <p>
+          <span>
+            We Focused On Building High Quality Web Applications
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="bottom row">
+      <div class="large-8 large-centered columns">
+        <p class="text-justify">
+          Our focus is the development, testing, and management of web based software. We work with an international group of designers, consultants, and corporations on projects ranging from energy distribution to virtual presence robots. 
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="who-2">
+
+    <div class="top">
+      <div class="large-3 columns">
+        <p>
+          <span>
+            Our philosophy is to allow developers the freedom to get the job done while continuing to learn about new technologies and techniques.
+          </span>
+        </p>
+      </div>
+    </div>
+    
+    <div class="bottom row">
+      <div class="large-8 large-centered columns">
+        <p class="text-justify">
+          We use Linux and MacOS, as well as Windows and enjoy the best equipment we can get our hands on. We live in the world of open source, both using and contributing to projects like Rails and Prototype JS.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="who-3">
+    <div class="wrap row">
+      <div class="placeholder"></div>
+      <div class="bg">
+      </div>
+      <div class="placeholder"></div>
+      <p class="large-4 columns">
+        <span>
+          We Pride Ourselves In   Building A Strong Team Environment Where We Work Together To Solve Difficult Problems. 
+        </span>
+      </p>
+    </div>
+
+  </section>
+
+  <section id="office">
+
+    <div class="top">
+      <ul class="large-block-grid-5">
+        <li><%= image_tag("/images/theme/office-sample.jpg")%></li>
+        <li><%= image_tag("/images/theme/office-sample.jpg")%></li>
+        <li><%= image_tag("/images/theme/office-sample.jpg")%></li>        
+        <li><%= image_tag("/images/theme/office-sample.jpg")%></li>
+        <li><%= image_tag("/images/theme/office-sample.jpg")%></li>
+        <li><%= image_tag("/images/theme/office-sample.jpg")%></li>
+        <li><%= image_tag("/images/theme/office-sample.jpg")%></li>        
+        <li><%= image_tag("/images/theme/office-sample.jpg")%></li>
+      </ul>
+
+    </div>
+    
+    <div class="bottom row">
+      <div class="large-10 large-centered columns">
+        <h3>OFFICE ENVIORMENT</h3>
+        <p class="text-justify">
+          Our office is open to visitors, if you are in the area and would like to stop by feel free to get in touch (<a href="mailto:connect@kudelabs.com">connect@kudelabs.com</a>). We are especially happy to meet entrepreneurs, technology enthusiasts, and developers from anywhere.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="employee">
+
+  </section>
+
+  <section id="contact">
+
+  </section>
+
+</div>
+<script>
+  $(document).ready(function(){
+    $(".main").onepage_scroll({
+      sectionContainer: "section",
+      responsiveFallback: 600,
+      loop: true
+    });
+  });
+  
+</script>
