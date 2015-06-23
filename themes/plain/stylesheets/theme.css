@@ -1,0 +1,57 @@
+/* Fonts and colors */
+body {
+  font-family: sans-serif;
+}
+h1 a, h2 a {
+  text-decoration: none;
+  color: black;
+}
+h1 a:hover, h2 a:hover {
+  text-decoration: underline;
+}
+.header, .footer {
+  text-align: center;
+}
+#errors {
+  border: red 1px solid;
+  border-radius: 0.5rem;
+  background-color: #f88;
+  padding: 1rem;
+}
+
+/*
+ * Simple horizontal layout based on a 20 4 20 4 20 grid
+ */
+.container {
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sidebar {
+  max-width: 20rem;
+  display: inline-block;
+}
+.content, .sidebar {
+  margin-bottom: 2rem;
+}
+
+@media(min-width: 68rem) {
+  .container {
+    max-width: 68rem;
+  }
+  .content {
+    width: 44rem;
+    float: left;
+  }
+  .sidebar {
+    margin-left: 4rem;
+  }
+}
+.footer {
+  clear: both;
+}
+
+/* Admin tools */
+.admintools {
+  float: right;
+}
